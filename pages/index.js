@@ -10,7 +10,7 @@ import Head from 'next/head'
 import { getDataset } from '../lib/dataset'
 import { addView } from '../lib/utils'
 
-const datasetsDirectory = process.env.PORTAL_DATASET_PATH || path.join(process.cwd(), "public", "country-codes")
+const datasetsDirectory = process.env.PORTAL_DATASET_PATH || path.join(process.cwd(), "public", "dataset")
 
 export default function Home({ dataset, specs }) {
   const navMenu = [{ title: 'Blog', path: '/blog' },
